@@ -12,7 +12,7 @@ A Web application that helps manage wealth with simple features as below :
 - React for user interface and visualization
 - Go for backend APIs
 - Postgre for DB
-_<will evolve as it goes :) >_
+- _<will evolve as it goes :) >_
 
 ## Basic commands to run the containers
 
