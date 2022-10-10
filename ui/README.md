@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+# HOW TO BUILD THE TRACK MY WEALTH UI APPLICATION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+In the project directory, you can run the below npm commands directly
 
 ### `npm start`
 
@@ -43,3 +39,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 This will generate the docker image with the UI container running the reach application on port 3000
 Check the dockerfile and docker compose files for more details on how the docker image definition is specified.
+
+### `sudo docker compose -f docker-compose.dev.yml up`
+To generate the docker image for dev environment
+
+### `sudo docker compose -f docker-compose.prod.yml up`
+To generate the docker image for prod environment
