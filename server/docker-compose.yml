@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  trackmywealth:
+    container_name: trackmywealth-dev
+    image: trackmywealth-dev
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/trackmywealth
+    ports:
+      - 4000:4000
