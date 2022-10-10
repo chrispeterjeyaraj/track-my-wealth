@@ -1,7 +1,7 @@
 FROM node:16-alpine AS development
 ENV NODE_ENV development
 # Add a work directory
-WORKDIR /app
+WORKDIR /trackmywealth
 # Cache and Install dependencies
 COPY package.json .
 RUN npm install
@@ -15,7 +15,7 @@ CMD [ "npm", "start" ]
 FROM node:16-alpine AS builder
 ENV NODE_ENV production
 # Add a work directory
-WORKDIR /app
+WORKDIR /trackmywealth
 # Cache and Install dependencies
 COPY package.json .
 RUN npm install --production
