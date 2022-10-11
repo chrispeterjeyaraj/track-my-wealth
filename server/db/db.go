@@ -3,7 +3,7 @@ package db
 import (
 	"log"
 
-	"github.com/track-my-wealth/server/models"
+	"github.com/chrispeterjeyaraj/track-my-wealth/server/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -17,7 +17,7 @@ func Init() *gorm.DB {
 		log.Fatalln(err)
 	}
 
-	db.AutoMigrate(&models.UserPref{})
+	db.AutoMigrate(&models.UserPref{}, &models.Expense{}, &models.Income{}, &models.Saving{})
 
 	return db
 }

@@ -2,8 +2,8 @@ version: "3.8"
 
 services:
   trackmywealthdb:
-    image: trackmywealth-db
-    container_name: trackmywealth-db
+    image: trackmywealth-database
+    container_name: trackmywealth-database
     build:
       context: .
       target: db
