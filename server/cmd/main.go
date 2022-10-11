@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/chrispeterjeyaraj/track-my-wealth/server/db"
-	"github.com/chrispeterjeyaraj/track-my-wealth/server/handlers"
+	"github.com/chrispeterjeyaraj/track-my-wealth/server/pkg/handlers"
 	"github.com/gorilla/mux"
 )
 

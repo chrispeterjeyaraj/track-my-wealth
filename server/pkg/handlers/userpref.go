@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/chrispeterjeyaraj/track-my-wealth/server/models"
+	"github.com/chrispeterjeyaraj/track-my-wealth/server/pkg/models"
 )
 
 func (h handler) GetAllUserPrefs(w http.ResponseWriter, r *http.Request) {

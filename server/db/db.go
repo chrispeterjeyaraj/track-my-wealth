@@ -3,7 +3,7 @@ package db
 import (
 	"log"
 
-	"github.com/chrispeterjeyaraj/track-my-wealth/server/models"
+	"github.com/chrispeterjeyaraj/track-my-wealth/server/pkg/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
