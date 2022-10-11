@@ -7,7 +7,21 @@ services:
     build:
       context: .
       target: development
+    links:
+      - "trackmywealthdb:db"
     volumes:
       - .:/trackmywealth
     ports:
       - 4000:4000
+  trackmywealthdb:
+    image: trackmywealth-db
+    container_name: trackmywealth-db
+    build:
+      context: .
+      target: db
+    environment:
+      - POSTGRES_USER=tmwapp
+      - POSTGRES_PASSWORD=tmwv10
+      - POSTGRES_DB=trackmywealth
+    ports:
+      - 5432:5432
