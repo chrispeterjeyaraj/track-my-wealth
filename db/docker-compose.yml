@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  trackmywealthdb:
+    image: trackmywealth-db
+    container_name: trackmywealth-db
+    build:
+      context: .
+      target: db
+    environment:
+      - POSTGRES_USER=tmwapp
+      - POSTGRES_PASSWORD=tmwv10
+      - POSTGRES_DB=trackmywealth
+    ports:
+      - 5432:5432

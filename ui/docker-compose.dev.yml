@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  trackmywealth:
-    container_name: track-my-wealth-dev
-    image: track-my-wealth-dev
+  trackmywealthfrontend:
+    container_name: track-my-wealth-frontend
+    image: track-my-wealth-frontend
     build:
       context: .
       target: development
