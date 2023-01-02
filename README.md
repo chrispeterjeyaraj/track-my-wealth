@@ -1,11 +1,4 @@
-# Track My Wealth
-
-A Web application that helps manage wealth with simple features as below : 
-
-- monthly budgeting (Percentage model (needs, wants and saving) - Japanese Kakeibo model) 
-- monthly cash flow tracking
-- Statistics on income,  expense , networth, debt etc. (monthly yearly view)
-- Exporting a pdf report/ excel report
+# Go + REACT docker boiler template
 
 ## Tech
 - Docker for creating containers for UI, Server and DB
